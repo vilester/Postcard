@@ -103,6 +103,15 @@
                                     <rect key="frame" x="20" y="80" width="360" height="97"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label First" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQz-38-coe">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="198" width="236" height="66"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +121,7 @@
                                 <exclude reference="eU2-hi-asu"/>
                                 <exclude reference="FGr-M7-FOE"/>
                                 <exclude reference="F8W-QD-cjG"/>
+                                <exclude reference="pQz-38-coe"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,6 +131,7 @@
                                 <include reference="eU2-hi-asu"/>
                                 <include reference="FGr-M7-FOE"/>
                                 <include reference="F8W-QD-cjG"/>
+                                <include reference="pQz-38-coe"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +140,7 @@
                         <outlet property="enterNameTextField" destination="Jvf-7m-gAx" id="fas-fV-6OE"/>
                         <outlet property="mailButtom" destination="FGr-M7-FOE" id="AQW-XK-USD"/>
                         <outlet property="messageLabel" destination="F8W-QD-cjG" id="red-WA-Dka"/>
+                        <outlet property="nameLabel" destination="pQz-38-coe" id="uPA-Fo-QdC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

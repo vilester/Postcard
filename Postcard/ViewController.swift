@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterNameTextField: UITextField!
     @IBOutlet weak var enterMessageTextField: UITextField!
     @IBOutlet weak var mailButtom: UIButton!
-    
-    
+    @IBOutlet weak var nameLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,18 +28,29 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendMailButtonPressed(sender: UIButton) {
-        messageLabel.hidden = false
+        messageLabel.hidden = false  //by default the Hidden is set to true that when you won't see the text, hence why this is needed to set to False.
         messageLabel.text = enterMessageTextField.text
         messageLabel.textColor = UIColor.redColor()
         
-        
         enterMessageTextField.text = ""
         enterMessageTextField.resignFirstResponder()
+        // This field will remove the keyboard once keybaord is open on Message Test is selected and mail sent button is clicked.
+        
+        
+        
+        
+        nameLabel.hidden = false
+        nameLabel.text = enterNameTextField.text
+        nameLabel.textColor = UIColor.blueColor()
+        
+        enterNameTextField.text = ""
+        enterNameTextField.resignFirstResponder()
+
     
         mailButtom.setTitle("Mail Sent", forState: UIControlState.Normal)
     
     
-
+    }
     
 }
 
